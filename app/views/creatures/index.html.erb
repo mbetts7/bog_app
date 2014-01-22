@@ -1,6 +1,11 @@
+<div class="container">
+<h1> Creatures in my Bog </h1>
 <% @creatures.each do |creature|%>
 	<div>
-        Name:  <%= creature[:name] %> <br>
-        Description: <%= creature[:description] %> <br>
+		<a href="/creatures/<%= creature.id %>">
+        <li><%= creature[:name] %> [<%= creature[:description]%>]
+        </li>
+        </a>
     </div>
 <% end %>
+</div>
