@@ -14,6 +14,6 @@ BogApp::Application.routes.draw do
   # Route the incoming update using the id
   put "/creatures/:id", to: "creatures#update"
 
-
+  
 
 end

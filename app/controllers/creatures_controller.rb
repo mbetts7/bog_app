@@ -36,4 +36,8 @@ class CreaturesController < ApplicationController
     	redirect_to "/creatures/#{creature.id}"
     end
 
+    def destroy
+    end
+
+
 end
