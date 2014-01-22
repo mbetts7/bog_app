@@ -9,11 +9,13 @@ get "/creatures/:id", to: "creatures#show"
 
 get "/creatures/:id/edit", to: "creatures#edit"
 
+get "/creatures/:id/delete", to: "creatures#delete"
+
 post "/creatures", to: "creatures#create"
 
 # Route the incoming update using the id
 put "/creatures/:id", to: "creatures#update"
 
-delete "/creatures/:id", to: "creatures#delete"
+delete "/creatures/:id", to: "creatures#destroy"
 
 end

@@ -38,6 +38,12 @@ class CreaturesController < ApplicationController
 
     def delete
     	id = params[:id]
+    	@creature =  Creature.find(id)
+    	render :delete
+    end
+
+    def destroy
+    	id = params[:id]
     	Creature.destroy(id)
     	redirect_to "/"
     end
